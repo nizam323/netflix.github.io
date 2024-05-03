@@ -57,7 +57,8 @@
     transition: all;
     transition-duration: 0.7s;
 }
-.btn:hover{
+
+.btn:hover {
     cursor: pointer;
     background: rgba(229, 9, 20, 0.765);
 }
@@ -67,7 +68,7 @@
     padding: 7px 17px;
 }
 
-.btn-big{
+.btn-big {
     font-size: 1.3rem;
     font-weight: 700;
     /* padding: 11px 11px; */
@@ -75,7 +76,7 @@
     width: 165px;
 }
 
-.txt-parent{
+.txt-parent {
     height: calc(100% - 100px);
     display: flex;
     align-items: center;
@@ -90,14 +91,15 @@
     font-family: "Kanit", sans-serif;
 }
 
-.txt-sm1{
+.txt-sm1 {
     color: white;
     text-align: center;
     font-size: 1.65rem;
     font-weight: 400;
     font-family: "Kanit", sans-serif;
 }
-.txt-sm2{
+
+.txt-sm2 {
     margin-bottom: 13px;
     color: white;
     text-align: center;
@@ -106,17 +108,17 @@
     font-family: "Kanit", sans-serif;
 }
 
-.same-txt{
+.same-txt {
     padding: 6px 0;
 }
 
-.inp{
+.inp {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.inp-email{
+.inp-email {
     margin-right: 9px;
     background: transparent;
     height: 50px;
@@ -129,52 +131,154 @@
     color: white;
 }
 
-.inp-email::placeholder{
+.inp-email::placeholder {
     color: rgba(255, 255, 255, 0.664);
-} 
-
-.sepration{
-    background-color: rgba(35, 35, 35, 0.418);
-    height: 10px;
 }
 
-.sections{
+.sepration {
+    background-color: rgb(35 35 35);
+    height: 8px;
+}
+
+.sections {
     background-color: rgb(0 0 0);
     height: auto;
 }
 
-.sec1-parent{
+.sec1-parent {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px 30px;
 }
 
-.sec-txt{
-    margin-left: 10%;
+.sec2-parent {
+    overflow-x: clip;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
 }
 
-.same-txt1{
+.sec-txt {
+    margin-left: 10%;
+    margin-bottom: 76px;
+
+}
+
+.same-txt1 {
     text-align: left;
 }
 
-.sec1-tv-img{
+.sec1-tv-img {
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(images/tv.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     width: 76%;
     height: 400px;
     position: relative;
 }
 
-.tv-video{
+.sec1-tv-img img {
+    width: 118%;
+    z-index: 1;
+}
+
+.tv-video {
+    left: -21%;
+    top: 21%;
+    height: 56%;
+    width: 143%;
     position: absolute;
-    left: 14%;
-    top: 24%;
+}
+
+.sec2-img-div {
+    background-image: url(images/mobile-0819.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 311px;
+    width: 359px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.sec3-img-div {
+    background-image: url(images/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 311px;
+    width: 453px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.boxshot {
+    border: 1px solid #ffffff78;
+    font-family: "Kanit", sans-serif;
+    color: white;
+    background-color: rgb(0 0 0);
+    border-radius: 8px;
+    height: 33%;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxshot1 {
+    width: 25%;
+    height: 80%;
+    background-image: url(images/boxshot.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.boxshot2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.boxshot3 {
+    width: 20%;
     height: 50%;
-    width: 72%;
+    background-image: url(videos/download-icon.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+span{
+    letter-spacing: 2px;
+}
+
+.sec3-txt{
+    padding: 71px 0;
+    padding-right: 258px;
+}
+
+.sec1-tv-img {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; /* Adjust this width to fit your layout */
+    height: 400px;
+    position: relative;
+}
+
+.sec1-tv-img img {
+    width: 100%; /* Set the width to 100% to fit the container */
+    z-index: 1;
+}
+
+.tv-video {
+    /* Adjust the position and size of the video as necessary */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
