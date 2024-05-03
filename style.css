@@ -1,0 +1,180 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background set */
+.bg-container {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 85%);
+}
+
+.bg-container::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    background-image: url(images/PK-en-20240429-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    /* background-size: 100% 100%; */
+    background-size: cover;
+}
+
+/* navbar */
+.nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.292); */
+}
+
+.nav-logo {
+    /* background-color: beige; */
+    width: 10rem;
+    position: absolute;
+    left: 13%;
+}
+
+.nav-btn {
+    position: absolute;
+    right: 13%;
+}
+
+.btn {
+    background: rgb(229, 9, 20);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    transition: all;
+    transition-duration: 0.7s;
+}
+.btn:hover{
+    cursor: pointer;
+    background: rgba(229, 9, 20, 0.765);
+}
+
+.btn-sm {
+    font-size: 15px;
+    padding: 7px 17px;
+}
+
+.btn-big{
+    font-size: 1.3rem;
+    font-weight: 700;
+    /* padding: 11px 11px; */
+    height: 50px;
+    width: 165px;
+}
+
+.txt-parent{
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt-big {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Kanit", sans-serif;
+}
+
+.txt-sm1{
+    color: white;
+    text-align: center;
+    font-size: 1.65rem;
+    font-weight: 400;
+    font-family: "Kanit", sans-serif;
+}
+.txt-sm2{
+    margin-bottom: 13px;
+    color: white;
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 400;
+    font-family: "Kanit", sans-serif;
+}
+
+.same-txt{
+    padding: 6px 0;
+}
+
+.inp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inp-email{
+    margin-right: 9px;
+    background: transparent;
+    height: 50px;
+    width: 40%;
+    padding: 6px 16px;
+    border: 1px solid #ffffff78;
+    border-radius: 3px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.inp-email::placeholder{
+    color: rgba(255, 255, 255, 0.664);
+} 
+
+.sepration{
+    background-color: rgba(35, 35, 35, 0.418);
+    height: 10px;
+}
+
+.sections{
+    background-color: rgb(0 0 0);
+    height: auto;
+}
+
+.sec1-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
+}
+
+.sec-txt{
+    margin-left: 10%;
+}
+
+.same-txt1{
+    text-align: left;
+}
+
+.sec1-tv-img{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/tv.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 76%;
+    height: 400px;
+    position: relative;
+}
+
+.tv-video{
+    position: absolute;
+    left: 14%;
+    top: 24%;
+    height: 50%;
+    width: 72%;
+}
