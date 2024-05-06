@@ -295,12 +295,13 @@ span {
     background-color: rgb(65, 65, 65);
 }
 
-.ans-ques{
+.ans-ques {
     background-color: rgb(45, 45, 45);
     width: 70%;
     height: 50px;
-    margin: auto;   
+    margin: auto;
 }
+
 
 .que {
     margin-left: 3%;
@@ -318,6 +319,22 @@ span {
     cursor: pointer;
 }
 
+.btn-animation {
+    animation-name: btnrotation;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btnrotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-49deg);
+    }
+}
+
 .answ {
     margin: 0 auto 10px;
     text-align: left;
@@ -331,4 +348,13 @@ span {
 .d-block {
     padding: 5px 2%;
     height: auto;
+}
+
+.email-btn-repeat{
+    width: 100%;
+    padding: 30px 13px;
+}
+
+.inp-last{
+    width: 40%;
 }

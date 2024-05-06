@@ -75,6 +75,10 @@
     .sec-txt {
         margin-bottom: -5px;
     }
+    
+    .inp-last{
+        width: 95%;
+    }
 }
 
 /* large screen */
@@ -146,6 +150,10 @@
     .sec2-img-div {
         height: 378px;
         width: 450px;
+    }
+    
+    .inp-last{
+        width: 40%;
     }
 
 }
