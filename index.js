@@ -1,8 +1,9 @@
 // FAQ btn logic
 
-let answ = document.querySelector("#unHide");
-let faqBtn = document.querySelector("#faqBtn");
+function clk(elements) {
+    let answ = elements.nextElementSibling;
 
-function clk(){
-    answ.classList.toggle("d-block");
-}
+    let unHide = document.querySelector(".d-block");
+
+    console.log(answ)
+};

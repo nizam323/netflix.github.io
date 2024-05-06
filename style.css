@@ -23,7 +23,6 @@
     z-index: -1;
     position: absolute;
     background-image: url(images/PK-en-20240429-popsignuptwoweeks-perspective_alpha_website_large.jpg);
-    /* background-size: 100% 100%; */
     background-size: cover;
 }
 
@@ -33,11 +32,9 @@
     display: flex;
     align-items: center;
     position: relative;
-    /* background-color: rgba(0, 0, 0, 0.292); */
 }
 
 .nav-logo {
-    /* background-color: beige; */
     width: 10rem;
     position: absolute;
     left: 13%;
@@ -71,7 +68,6 @@
 .btn-big {
     font-size: 1.3rem;
     font-weight: 700;
-    /* padding: 11px 11px; */
     height: 50px;
     width: 165px;
 }
@@ -163,8 +159,6 @@
 
 .sec-txt {
     margin-left: 10%;
-    /* margin-bottom: 76px; */
-
 }
 
 .same-txt1 {
@@ -267,19 +261,16 @@ span {
     align-items: center;
     justify-content: center;
     width: 50%;
-    /* Adjust this width to fit your layout */
     height: 400px;
     position: relative;
 }
 
 .sec1-tv-img img {
     width: 100%;
-    /* Set the width to 100% to fit the container */
     z-index: 1;
 }
 
 .tv-video {
-    /* Adjust the position and size of the video as necessary */
     position: absolute;
     top: 0;
     left: 0;
@@ -288,13 +279,27 @@ span {
 }
 
 .ques {
-    background-color: gray;
+    background-color: rgb(45, 45, 45);
     width: 70%;
-    height: 50px;
+    cursor: pointer;
+    height: 65px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.ques:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.ans-ques{
+    background-color: rgb(45, 45, 45);
+    width: 70%;
+    height: 50px;
+    margin: auto;   
 }
 
 .que {
@@ -313,14 +318,17 @@ span {
     cursor: pointer;
 }
 
-.answ{
-    margin: 3px auto;
+.answ {
+    margin: 0 auto 10px;
     text-align: left;
-    display: none;
-    height: auto;
-    padding: 5px 7px;
+    overflow: hidden;
+    height: 0;
+    transition-property: all;
+    transition-duration: 0.7s;
+    padding: 0 2%;
 }
 
-.d-block{
-    display: block;
+.d-block {
+    padding: 5px 2%;
+    height: auto;
 }
