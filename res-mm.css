@@ -75,9 +75,19 @@
     .sec-txt {
         margin-bottom: -5px;
     }
-    
-    .inp-last{
+
+    .inp-last {
         width: 95%;
+    }
+
+    .ans-ques,
+    .ques {
+        width: 95%;
+    }
+
+    .que,
+    .ans-ques {
+        font-size: 18px;
     }
 }
 
@@ -151,8 +161,8 @@
         height: 378px;
         width: 450px;
     }
-    
-    .inp-last{
+
+    .inp-last {
         width: 40%;
     }
 
