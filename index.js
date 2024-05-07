@@ -1,20 +1,20 @@
 // FAQ btn logic
 
 function clk(elements) {
-    let qe = elements.lastElementChild;
-    let answ = elements.nextElementSibling;
-    
+    let btnAnima = elements.lastElementChild;
+    let ans = elements.nextElementSibling;
     let unHide = document.querySelector(".d-block");
-    
-    let reslt = answ.classList.contains("d-block");
-    
-    if (reslt == false) {
-        answ.classList.toggle("d-block");
-        qe.classList.add("btn-animation")
+    let unHideBtn = document.querySelector(".btn-animation");
+
+    let result = ans.classList.contains("d-block");
+
+    if (result == false) {
+        ans.classList.toggle("d-block");
+        btnAnima.classList.toggle("btn-animation");
     }
-    
-    unHide.classList.remove("d-block")
-    qe.classList.remove("btn-animation")
-    
-    
+
+    if (unHide) {
+        unHideBtn.classList.remove("btn-animation");
+        unHide.classList.remove("d-block");
+    }
 };
